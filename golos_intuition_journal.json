@@ -1,0 +1,5772 @@
+{
+  "stats": {
+    "total_cycles": 342,
+    "matches": 25,
+    "no_matches": 309,
+    "no_anticipation": 8,
+    "hit_rate": 0.073,
+    "contexts": [
+      "default"
+    ]
+  },
+  "journal": [
+    {
+      "time": "2026-09-24T18:21:08.588339",
+      "context": "default",
+      "anticipation": null,
+      "perception": {
+        "time": "2026-09-24T18:21:08.588339",
+        "actual": "напиши"
+      },
+      "verdict": "NO_ANTICIPATION"
+    },
+    {
+      "time": "2026-09-24T18:21:12.605169",
+      "context": "default",
+      "anticipation": null,
+      "perception": {
+        "time": "2026-09-24T18:21:12.605169",
+        "actual": "экстренный вызов что двенадцать"
+      },
+      "verdict": "NO_ANTICIPATION"
+    },
+    {
+      "time": "2026-09-24T18:21:17.197095",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T18:21:14.604010",
+        "context": "default",
+        "based_on": "экстренный вызов что двенадцать",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T18:21:17.197095",
+        "actual": "точка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T18:21:18.340491",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T18:21:18.302681",
+        "context": "default",
+        "based_on": "точка",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T18:21:18.340491",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T18:28:04.725097",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T18:27:50.050570",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T18:28:04.725097",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T18:28:10.758663",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T18:28:07.666179",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T18:28:10.758663",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T18:28:22.325372",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T18:28:19.267599",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T18:28:22.325372",
+        "actual": "следующий трек"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T18:48:54.332939",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T18:48:54.332939",
+        "context": "default",
+        "based_on": "следующий трек",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T18:48:54.332939",
+        "actual": "еду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T18:48:59.409770",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T18:48:56.306094",
+        "context": "default",
+        "based_on": "еду",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T18:48:59.409770",
+        "actual": "следующий"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T18:50:09.607959",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T18:50:07.259273",
+        "context": "default",
+        "based_on": "следующий",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T18:50:09.607959",
+        "actual": "если нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T18:58:04.884726",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T18:58:02.545082",
+        "context": "default",
+        "based_on": "если нравится",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T18:58:04.884726",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T19:51:06.604759",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T19:51:02.988886",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T19:51:06.604759",
+        "actual": "музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T20:01:12.835681",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T20:01:10.074140",
+        "context": "default",
+        "based_on": "музыку",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T20:01:12.835681",
+        "actual": "напиши"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T20:01:28.786642",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T20:01:17.356966",
+        "context": "default",
+        "based_on": "напиши",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T20:01:28.786642",
+        "actual": "как бы ты сам смог прогнозировать его поведения"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T20:01:38.808094",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T20:01:38.808094",
+        "context": "default",
+        "based_on": "как бы ты сам смог прогнозировать его поведения",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T20:01:38.808094",
+        "actual": "мне просто интересно твоё независимое мнение"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T20:01:43.845891",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T20:01:41.304200",
+        "context": "default",
+        "based_on": "мне просто интересно твоё независимое мнение",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T20:01:43.845891",
+        "actual": "точка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T20:01:47.927016",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T20:01:47.926501",
+        "context": "default",
+        "based_on": "точка",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T20:01:47.927016",
+        "actual": "а да"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T20:22:57.625630",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T20:22:54.860979",
+        "context": "default",
+        "based_on": "а да",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T20:22:57.625630",
+        "actual": "напиши"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T20:23:00.140179",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T20:23:00.140179",
+        "context": "default",
+        "based_on": "напиши",
+        "expected": "экстренный вызов что двенадцать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T20:23:00.140179",
+        "actual": "просил только россию"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T20:23:06.643181",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T20:23:06.643181",
+        "context": "default",
+        "based_on": "просил только россию",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T20:23:06.643181",
+        "actual": "с остальными разберёмся"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:20:19.173882",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:20:19.172810",
+        "context": "default",
+        "based_on": "с остальными разберёмся",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:20:19.173882",
+        "actual": "из-за пазухи если я не просто передам твою команду а сама сформулировать что-то для него через слой канал но только после того как он закончит отвечать"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:20:21.664235",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:20:21.664235",
+        "context": "default",
+        "based_on": "из-за пазухи если я не просто передам твою команду а сама сформулировать что-то для него через слой канал но только после того как он закончит отвечать",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:20:21.664235",
+        "actual": "команды"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:20:31.847601",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:20:27.171509",
+        "context": "default",
+        "based_on": "команды",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:20:31.847601",
+        "actual": "окей после его ответа скажу время"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:20:32.855374",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:20:32.855374",
+        "context": "default",
+        "based_on": "окей после его ответа скажу время",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:20:32.855374",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:20:35.354093",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:20:35.354093",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:20:35.354093",
+        "actual": "спасибо"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:22:51.797807",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:22:51.796800",
+        "context": "default",
+        "based_on": "спасибо",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:22:51.797807",
+        "actual": "ждёшь когда он же"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:22:55.295855",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:22:55.295855",
+        "context": "default",
+        "based_on": "ждёшь когда он же",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:22:55.295855",
+        "actual": "жду ответа"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:22:59.793177",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:22:59.793177",
+        "context": "default",
+        "based_on": "жду ответа",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:22:59.793177",
+        "actual": "я слушаю хозяин"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:23:08.427712",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:23:04.795098",
+        "context": "default",
+        "based_on": "я слушаю хозяин",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:23:08.427712",
+        "actual": "команда музыка ждём выполнения"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:23:12.938482",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:23:12.938177",
+        "context": "default",
+        "based_on": "команда музыка ждём выполнения",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:23:12.938482",
+        "actual": "принято выполняю"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:25:07.411212",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:25:03.803971",
+        "context": "default",
+        "based_on": "принято выполняю",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:25:07.411212",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:25:08.424050",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:25:08.424050",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:25:08.424050",
+        "actual": "жду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:25:09.932360",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:25:09.932360",
+        "context": "default",
+        "based_on": "жду",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:25:09.932360",
+        "actual": "принято"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:25:11.924438",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:25:11.924438",
+        "context": "default",
+        "based_on": "принято",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:25:11.924438",
+        "actual": "выполняю"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:25:58.313862",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:25:58.313862",
+        "context": "default",
+        "based_on": "выполняю",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:25:58.313862",
+        "actual": "просто ка внимание голос"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:26:00.313086",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:26:00.313086",
+        "context": "default",
+        "based_on": "просто ка внимание голос",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:26:00.313086",
+        "actual": "он уже проснулся"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:26:06.436428",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:26:02.813736",
+        "context": "default",
+        "based_on": "он уже проснулся",
+        "expected": "точка",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:26:06.436428",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:26:10.449201",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:26:10.448513",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:26:10.449201",
+        "actual": "принята выполняю"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:26:22.951942",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:26:22.950875",
+        "context": "default",
+        "based_on": "принята выполняю",
+        "expected": "музыка",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:26:22.950875",
+        "actual": "вот зачем ты сейчас сказала принято выполняю ты что хотела выполнить"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:27:17.372259",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:27:17.372259",
+        "context": "default",
+        "based_on": "вот зачем ты сейчас сказала принято выполняю ты что хотела выполнить",
+        "expected": "музыка",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:27:17.372259",
+        "actual": "он прошу зака"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:27:21.365497",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:27:21.365497",
+        "context": "default",
+        "based_on": "он прошу зака",
+        "expected": "музыка",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:27:21.365497",
+        "actual": "ждут его реакцией"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:27:27.366289",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:27:27.366289",
+        "context": "default",
+        "based_on": "ждут его реакцией",
+        "expected": "музыка",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:27:27.366289",
+        "actual": "вот это жду его реакции зачем"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:27:39.473481",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:27:35.873902",
+        "context": "default",
+        "based_on": "вот это жду его реакции зачем",
+        "expected": "музыка",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:27:39.473481",
+        "actual": "не убираю оставляя только внимание голос потом музыка и молчу"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:27:43.486578",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:27:43.485571",
+        "context": "default",
+        "based_on": "не убираю оставляя только внимание голос потом музыка и молчу",
+        "expected": "музыка",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:27:43.486578",
+        "actual": "принято выполняю"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:27:59.572795",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:27:55.986428",
+        "context": "default",
+        "based_on": "принято выполняю",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:27:59.572795",
+        "actual": "голос тебе ответил ага включаю музыку зачем-то ему отвечаешь он себя не понимает он ждёт только команды"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:28:05.593538",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:28:05.593538",
+        "context": "default",
+        "based_on": "голос тебе ответил ага включаю музыку зачем-то ему отвечаешь он себя не понимает он ждёт только команды",
+        "expected": "музыка",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:28:05.593538",
+        "actual": "венето выполняю"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:28:15.091008",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:28:15.091008",
+        "context": "default",
+        "based_on": "венето выполняю",
+        "expected": "музыка",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:28:15.091008",
+        "actual": "конфликт искусственных интеллекту"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:30:18.141162",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:30:14.543228",
+        "context": "default",
+        "based_on": "конфликт искусственных интеллекту",
+        "expected": "музыка",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:30:18.140462",
+        "actual": "музыка"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-24T21:30:22.155484",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:30:22.155484",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:30:22.155484",
+        "actual": "а принято выполняю"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:30:36.157566",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:30:36.157566",
+        "context": "default",
+        "based_on": "а принято выполняю",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:30:36.157566",
+        "actual": "вот для чего ты сейчас сказала принято выполняю это команда было ни тебе это было ответ на твою команду что ты собиралась выполнять вот этим ответом принято выполняя"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:30:43.655476",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:30:43.655476",
+        "context": "default",
+        "based_on": "вот для чего ты сейчас сказала принято выполняю это команда было ни тебе это было ответ на твою команду что ты собиралась выполнять вот этим ответом принято выполняя",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:30:43.655476",
+        "actual": "там и лишнее оставляем только команды голосу без комментариев и пояснений"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:30:52.155827",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:30:52.155827",
+        "context": "default",
+        "based_on": "там и лишнее оставляем только команды голосу без комментариев и пояснений",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:30:52.155827",
+        "actual": "вниманию голос"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:31:10.347903",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:30:55.659076",
+        "context": "default",
+        "based_on": "вниманию голос",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:31:10.347903",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:31:30.040095",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:31:15.353934",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:31:30.040095",
+        "actual": "голос нажми лэйт яндекс музыки"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:31:32.557143",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:31:32.555464",
+        "context": "default",
+        "based_on": "голос нажми лэйт яндекс музыки",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:31:32.557143",
+        "actual": "ед пробую другую команду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:31:38.633349",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:31:35.557165",
+        "context": "default",
+        "based_on": "ед пробую другую команду",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:31:38.633349",
+        "actual": "следующий трек"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:31:40.159802",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:31:40.159802",
+        "context": "default",
+        "based_on": "следующий трек",
+        "expected": "еду",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:31:40.159802",
+        "actual": "что я"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:31:44.163786",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:31:44.163786",
+        "context": "default",
+        "based_on": "что я",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:31:44.163786",
+        "actual": "хорошо жду что изменится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:31:53.743410",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:31:50.651058",
+        "context": "default",
+        "based_on": "хорошо жду что изменится",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:31:53.742875",
+        "actual": "музыка играет что меньше ты включил голос"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:31:57.759484",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:31:57.759484",
+        "context": "default",
+        "based_on": "музыка играет что меньше ты включил голос",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:31:57.759484",
+        "actual": "о нем не ошиблась жду твои конкретной командой"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:32:11.757645",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:32:11.756593",
+        "context": "default",
+        "based_on": "о нем не ошиблась жду твои конкретной командой",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:32:11.757645",
+        "actual": "а какой конкретной команды ты хочешь я тебе сейчас расскажу что произошло"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:32:17.763371",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:32:17.763371",
+        "context": "default",
+        "based_on": "а какой конкретной команды ты хочешь я тебе сейчас расскажу что произошло",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:32:17.763371",
+        "actual": "скажи я послушаю и пойму какая команда нужна"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:32:35.931888",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:32:21.260168",
+        "context": "default",
+        "based_on": "скажи я послушаю и пойму какая команда нужна",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:32:35.931888",
+        "actual": "ты сейчас открыла яндекс музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:32:48.042401",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:32:44.947716",
+        "context": "default",
+        "based_on": "ты сейчас открыла яндекс музыку",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:32:48.042401",
+        "actual": "что останавливают музыку ли будто это слово которое останавливает любой призы воспроизведения"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:32:51.078029",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:32:51.078029",
+        "context": "default",
+        "based_on": "что останавливают музыку ли будто это слово которое останавливает любой призы воспроизведения",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:32:51.078029",
+        "actual": "не и не да"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:32:58.065604",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:32:58.065082",
+        "context": "default",
+        "based_on": "не и не да",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:32:58.065604",
+        "actual": "голос"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:33:02.434650",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:33:00.066972",
+        "context": "default",
+        "based_on": "голос",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:33:02.434650",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:33:06.574602",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:33:06.574602",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "музыку",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:33:06.574602",
+        "actual": "без лишнего"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:38:24.579779",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:38:20.733911",
+        "context": "default",
+        "based_on": "без лишнего",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:38:24.579779",
+        "actual": "музыка жду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:38:28.596715",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:38:28.596715",
+        "context": "default",
+        "based_on": "музыка жду",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:38:28.596715",
+        "actual": "принято выполняю"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:38:32.103891",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:38:32.103891",
+        "context": "default",
+        "based_on": "принято выполняю",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:38:32.103891",
+        "actual": "вот ещё раз"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:43:47.645074",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:43:44.514961",
+        "context": "default",
+        "based_on": "вот ещё раз",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:43:47.645074",
+        "actual": "дальше"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:43:52.156417",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:43:52.156417",
+        "context": "default",
+        "based_on": "дальше",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:43:52.156417",
+        "actual": "хорошо жду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:00.740082",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:43:57.158046",
+        "context": "default",
+        "based_on": "хорошо жду",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:00.740082",
+        "actual": "а чего ты ждёшь музыка заиграл"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:01.769529",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:01.769529",
+        "context": "default",
+        "based_on": "а чего ты ждёшь музыка заиграл",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:01.769529",
+        "actual": "понял"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:03.257998",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:03.257998",
+        "context": "default",
+        "based_on": "понял",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:03.257998",
+        "actual": "оке"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:13.255024",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:13.255024",
+        "context": "default",
+        "based_on": "оке",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:13.255024",
+        "actual": "ну любую другую команду теперь давай"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:17.524943",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:14.774687",
+        "context": "default",
+        "based_on": "ну любую другую команду теперь давай",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:17.524943",
+        "actual": "громче"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:20.570613",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:20.570613",
+        "context": "default",
+        "based_on": "громче",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:20.570613",
+        "actual": "поняла"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:23.578837",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:23.578837",
+        "context": "default",
+        "based_on": "поняла",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:23.578837",
+        "actual": "войне"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:26.536856",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:26.535857",
+        "context": "default",
+        "based_on": "войне",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:26.536856",
+        "actual": "ну другую команду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:32.135827",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:29.055159",
+        "context": "default",
+        "based_on": "ну другую команду",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:32.135827",
+        "actual": "следующий трек"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:35.166732",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:35.165737",
+        "context": "default",
+        "based_on": "следующий трек",
+        "expected": "еду",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:35.166732",
+        "actual": "жду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:45.720604",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:42.654803",
+        "context": "default",
+        "based_on": "жду",
+        "expected": "принято",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:45.720604",
+        "actual": "а что ждёшь он уже включил следующий трек не надо ждать он очень хорошо выполнять твои команда"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:50.240439",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:50.240439",
+        "context": "default",
+        "based_on": "а что ждёшь он уже включил следующий трек не надо ждать он очень хорошо выполнять твои команда",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:50.240439",
+        "actual": "понял евсеев просто даю команды когда нужно"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:52.738943",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:52.738348",
+        "context": "default",
+        "based_on": "понял евсеев просто даю команды когда нужно",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:52.738943",
+        "actual": "ну давай"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:55.741965",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:55.741965",
+        "context": "default",
+        "based_on": "ну давай",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:55.741965",
+        "actual": "внимание голос"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:44:59.741921",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:44:59.741921",
+        "context": "default",
+        "based_on": "внимание голос",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:44:59.741921",
+        "actual": "это ты о будить хочешь он уже проснулся он работает"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:04.741754",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:04.741754",
+        "context": "default",
+        "based_on": "это ты о будить хочешь он уже проснулся он работает",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:04.741754",
+        "actual": "понял а мы будет просто работаем сама по очереди"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:08.251038",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:08.250532",
+        "context": "default",
+        "based_on": "понял а мы будет просто работаем сама по очереди",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:08.250532",
+        "actual": "давай команды"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:13.347042",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:09.738723",
+        "context": "default",
+        "based_on": "давай команды",
+        "expected": "музыка",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:13.347042",
+        "actual": "музыка"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:16.387957",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:16.386963",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:16.387957",
+        "actual": "жду уже знаю"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:20.354925",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:20.354295",
+        "context": "default",
+        "based_on": "жду уже знаю",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:20.354925",
+        "actual": "мозг работает давай другую команду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:25.344891",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:22.386110",
+        "context": "default",
+        "based_on": "мозг работает давай другую команду",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:25.344891",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:27.857401",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:27.857401",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:27.857401",
+        "actual": "действий ждут"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:33.799206",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:30.860811",
+        "context": "default",
+        "based_on": "действий ждут",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:33.798208",
+        "actual": "нажал на паузу дальше"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:37.897970",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:34.805709",
+        "context": "default",
+        "based_on": "нажал на паузу дальше",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:37.897970",
+        "actual": "дальше"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:38.918809",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:38.918809",
+        "context": "default",
+        "based_on": "дальше",
+        "expected": "хорошо жду",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:38.918809",
+        "actual": "фоне ед"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:40.412693",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:40.412693",
+        "context": "default",
+        "based_on": "фоне ед",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:40.412693",
+        "actual": "хорошо"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:45.909132",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:45.908103",
+        "context": "default",
+        "based_on": "хорошо",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:45.909132",
+        "actual": "ты не жди ты команда давай"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:50.984730",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:47.917601",
+        "context": "default",
+        "based_on": "ты не жди ты команда давай",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:50.984730",
+        "actual": "следующий"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:45:54.004686",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:45:54.003163",
+        "context": "default",
+        "based_on": "следующий",
+        "expected": "если нравится",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:45:54.004686",
+        "actual": "ев хорошо"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:46:03.505119",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:46:03.504531",
+        "context": "default",
+        "based_on": "ев хорошо",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:46:03.505119",
+        "actual": "что хорошо это не я тебя не человек отвечает отшибе голос отвечает дэйн команды они мной"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:46:08.055261",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:46:08.054751",
+        "context": "default",
+        "based_on": "что хорошо это не я тебя не человек отвечает отшибе голос отвечает дэйн команды они мной",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:46:08.055261",
+        "actual": "у него принимались аманду голосом"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:46:17.089338",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:46:13.999204",
+        "context": "default",
+        "based_on": "у него принимались аманду голосом",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:46:17.089338",
+        "actual": "следующая команда"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:46:19.136257",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:46:19.136257",
+        "context": "default",
+        "based_on": "следующая команда",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:46:19.136257",
+        "actual": "гробниц смущает"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:46:25.608828",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:46:25.607824",
+        "context": "default",
+        "based_on": "гробниц смущает",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:46:25.608828",
+        "actual": "там много команд дай какую-нибудь другую"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:46:33.563179",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:46:30.622198",
+        "context": "default",
+        "based_on": "там много команд дай какую-нибудь другую",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:46:33.563179",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:46:44.108030",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:46:44.106993",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "действий ждут",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:46:44.108030",
+        "actual": "меня и команды по очередь"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:01.028760",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:01.028134",
+        "context": "default",
+        "based_on": "меня и команды по очередь",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:01.028760",
+        "actual": "жду команду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:08.540018",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:08.540018",
+        "context": "default",
+        "based_on": "жду команду",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:08.540018",
+        "actual": "так это уж он ждёт команду они ты"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:16.033952",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:16.033952",
+        "context": "default",
+        "based_on": "так это уж он ждёт команду они ты",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:16.033952",
+        "actual": "он дела ждём пока ты дашь следующую команду да ты даёшь команды они я"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:22.468053",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:19.529327",
+        "context": "default",
+        "based_on": "он дела ждём пока ты дашь следующую команду да ты даёшь команды они я",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:22.468053",
+        "actual": "поняла тогда даю пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:28.432073",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:25.486907",
+        "context": "default",
+        "based_on": "поняла тогда даю пауза",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:28.432073",
+        "actual": "пауза наш в виду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:30.448227",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:30.447138",
+        "context": "default",
+        "based_on": "пауза наш в виду",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:30.448227",
+        "actual": "поняла"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:39.943104",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:39.943104",
+        "context": "default",
+        "based_on": "поняла",
+        "expected": "войне",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:39.943104",
+        "actual": "после того как он тебя ответил давай следующую команду сразу"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:45.099562",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:41.955002",
+        "context": "default",
+        "based_on": "после того как он тебя ответил давай следующую команду сразу",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:45.099562",
+        "actual": "следующий трэк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:47.640725",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:47.640215",
+        "context": "default",
+        "based_on": "следующий трэк",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:47.640725",
+        "actual": "его оке"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:49:58.129414",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:49:58.129414",
+        "context": "default",
+        "based_on": "его оке",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:49:58.129414",
+        "actual": "сразу следующую команду твоя задача давать команда по очереди"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:50:03.115325",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:50:00.121077",
+        "context": "default",
+        "based_on": "сразу следующую команду твоя задача давать команда по очереди",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:50:03.115325",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:50:08.760971",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:50:05.655851",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "действий ждут",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:50:08.760971",
+        "actual": "дальше"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:50:10.779339",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:50:10.778406",
+        "context": "default",
+        "based_on": "дальше",
+        "expected": "хорошо жду",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:50:10.779339",
+        "actual": "я поняла"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:50:19.278097",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:50:19.278097",
+        "context": "default",
+        "based_on": "я поняла",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:50:19.278097",
+        "actual": "тебе не обязательно отвечать на его ответы"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:50:25.351762",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:50:25.350757",
+        "context": "default",
+        "based_on": "тебе не обязательно отвечать на его ответы",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:50:25.351762",
+        "actual": "у него молчу его ответы давай следующую команду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:50:30.377997",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:50:27.279470",
+        "context": "default",
+        "based_on": "у него молчу его ответы давай следующую команду",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:50:30.377997",
+        "actual": "не понял а дальше"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:50:32.890332",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:50:32.890332",
+        "context": "default",
+        "based_on": "не понял а дальше",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:50:32.890332",
+        "actual": "поняла"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:50:46.904778",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:50:46.900724",
+        "context": "default",
+        "based_on": "поняла",
+        "expected": "войне",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:50:46.904778",
+        "actual": "вот зачем ты говоришь слова поняла"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:50:58.403317",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:50:58.403317",
+        "context": "default",
+        "based_on": "вот зачем ты говоришь слова поняла",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:50:58.403317",
+        "actual": "привычка говорить краткий отклик могу молчать и вместо этого ну конечно ты же говоришь не со мной не с человеком"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:51:01.884927",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:51:01.883276",
+        "context": "default",
+        "based_on": "привычка говорить краткий отклик могу молчать и вместо этого ну конечно ты же говоришь не со мной не с человеком",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:51:01.884927",
+        "actual": "ты говоришь электронные машины"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:51:31.922688",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:51:28.812206",
+        "context": "default",
+        "based_on": "ты говоришь электронные машины",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:51:31.922688",
+        "actual": "поняла командуй команды командует следующий трек"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:51:34.955459",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:51:34.955459",
+        "context": "default",
+        "based_on": "поняла командуй команды командует следующий трек",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:51:34.955459",
+        "actual": "его хорошо жду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:51:38.444648",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:51:38.444648",
+        "context": "default",
+        "based_on": "его хорошо жду",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:51:38.444648",
+        "actual": "что хорошо жду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:51:51.064957",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:51:47.938994",
+        "context": "default",
+        "based_on": "что хорошо жду",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:51:51.064957",
+        "actual": "ждут когда ты скажешь какую дальше команду так ты сама выбираешь команда из наборы который ожидал в кодже"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:51:53.087499",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:51:53.087499",
+        "context": "default",
+        "based_on": "ждут когда ты скажешь какую дальше команду так ты сама выбираешь команда из наборы который ожидал в кодже",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:51:53.087499",
+        "actual": "я его жду"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:51:57.082613",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:51:57.082613",
+        "context": "default",
+        "based_on": "я его жду",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:51:57.082613",
+        "actual": "командуй кодом"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:52:03.524594",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:52:00.581022",
+        "context": "default",
+        "based_on": "командуй кодом",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:52:03.524594",
+        "actual": "поняла пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:52:09.161672",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:52:06.045128",
+        "context": "default",
+        "based_on": "поняла пауза",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-24T21:52:09.161672",
+        "actual": "дальше"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-24T21:52:11.187556",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-24T21:52:11.186549",
+        "context": "default",
+        "based_on": "дальше",
+        "expected": "хорошо жду",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-24T21:52:11.187556",
+        "actual": "я поняла"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T07:45:11.248103",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T07:45:06.902599",
+        "context": "default",
+        "based_on": "я поняла",
+        "expected": "тебе не обязательно отвечать на его ответы",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T07:45:11.248103",
+        "actual": "едучи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T07:45:30.049454",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T07:45:14.655220",
+        "context": "default",
+        "based_on": "едучи музыку",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T07:45:30.049454",
+        "actual": "открой музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T07:45:34.826033",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T07:45:31.587311",
+        "context": "default",
+        "based_on": "открой музыку",
+        "expected": "музыка",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T07:45:34.826033",
+        "actual": "музыка"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-25T08:40:48.260077",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:40:45.718416",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T08:40:48.260077",
+        "actual": "ев тише"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:40:49.293202",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:40:49.293202",
+        "context": "default",
+        "based_on": "ев тише",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T08:40:49.293202",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:40:54.794569",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:40:52.275974",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T08:40:54.794569",
+        "actual": "тише"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:40:55.832976",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:40:55.830969",
+        "context": "default",
+        "based_on": "тише",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T08:40:55.832976",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:41:08.950158",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:41:08.950158",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T08:41:08.950158",
+        "actual": "урсула"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:41:20.769207",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:41:18.396574",
+        "context": "default",
+        "based_on": "урсула",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T08:41:20.769207",
+        "actual": "концов перевод бюджета вот они пытаются толкать европы лес некая там общие единого мнения по этому поводу"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:41:29.100061",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:41:25.885914",
+        "context": "default",
+        "based_on": "концов перевод бюджета вот они пытаются толкать европы лес некая там общие единого мнения по этому поводу",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T08:41:29.100061",
+        "actual": "наш нормализации на другой пока написано украине абсолютно неприемлемы для европы"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:41:30.752383",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:41:30.751788",
+        "context": "default",
+        "based_on": "наш нормализации на другой пока написано украине абсолютно неприемлемы для европы",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T08:41:30.752383",
+        "actual": "похоже не форум"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:41:35.780764",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:41:33.232180",
+        "context": "default",
+        "based_on": "похоже не форум",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T08:41:35.780764",
+        "actual": "джой форточку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:41:36.339301",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:41:36.339301",
+        "context": "default",
+        "based_on": "джой форточку",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T08:41:36.339301",
+        "actual": "прекрасно архетип"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:41:44.817221",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:41:44.817221",
+        "context": "default",
+        "based_on": "прекрасно архетип",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T08:41:44.817221",
+        "actual": "с чего ты решил что де по вообще а ещё из параллельного давит на вашим требованиям ищи лица"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T08:41:48.394006",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T08:41:48.393006",
+        "context": "default",
+        "based_on": "с чего ты решил что де по вообще а ещё из параллельного давит на вашим требованиям ищи лица",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T08:41:48.394006",
+        "actual": "и как же они это называют и продолжить платёж"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T09:57:12.848661",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T09:56:58.122588",
+        "context": "default",
+        "based_on": "и как же они это называют и продолжить платёж",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T09:57:12.847152",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T09:57:17.929835",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T09:57:15.371089",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T09:57:17.929835",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T09:57:26.962536",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T09:57:26.962536",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "действий ждут",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T09:57:26.962536",
+        "actual": "что"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:20:15.789799",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:20:11.928716",
+        "context": "default",
+        "based_on": "что",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:20:15.789799",
+        "actual": "браузер"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:20:22.306469",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:20:22.306469",
+        "context": "default",
+        "based_on": "браузер",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:20:22.306469",
+        "actual": "╤В╤Г╤В"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:20:31.303663",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:20:31.303663",
+        "context": "default",
+        "based_on": "╤В╤Г╤В",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:20:31.303663",
+        "actual": "оля"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:20:37.297094",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:20:37.297094",
+        "context": "default",
+        "based_on": "оля",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:20:37.297094",
+        "actual": "поля"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:20:50.070720",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:20:47.316693",
+        "context": "default",
+        "based_on": "поля",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:20:50.070720",
+        "actual": "но напиши"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:20:54.076687",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:20:54.075102",
+        "context": "default",
+        "based_on": "но напиши",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:20:54.076687",
+        "actual": "брайан учатся"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:20:57.577427",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:20:57.577427",
+        "context": "default",
+        "based_on": "брайан учатся",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:20:57.577427",
+        "actual": "брайан умным"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:21:03.609423",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:21:01.077941",
+        "context": "default",
+        "based_on": "брайан умным",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:21:03.609423",
+        "actual": "точка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:21:04.612853",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:21:04.611846",
+        "context": "default",
+        "based_on": "точка",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T10:21:04.612853",
+        "actual": "ага"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-25T10:29:04.024158",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:29:04.023061",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T10:29:04.024158",
+        "actual": "уже о"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:29:24.670441",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:29:10.005057",
+        "context": "default",
+        "based_on": "уже о",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:29:24.670441",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:29:31.204234",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:29:28.112337",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T10:29:31.204234",
+        "actual": "музыка"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-25T10:29:38.807368",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:29:35.720227",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T10:29:38.807368",
+        "actual": "следующий трек"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-25T10:29:44.405890",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:29:41.314873",
+        "context": "default",
+        "based_on": "следующий трек",
+        "expected": "еду",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T10:29:44.405890",
+        "actual": "я следующий трек"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:29:49.747463",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:29:47.412845",
+        "context": "default",
+        "based_on": "я следующий трек",
+        "expected": "музыка",
+        "confidence": 7,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T10:29:49.747463",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T10:29:53.789464",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T10:29:53.789464",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "музыку",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T10:29:53.789464",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T17:58:04.579192",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T17:57:49.904081",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T17:58:04.579192",
+        "actual": "включи музыку"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-25T17:58:11.664746",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T17:58:08.525412",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T17:58:11.664746",
+        "actual": "музыка"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-25T23:17:35.027243",
+      "context": "default",
+      "anticipation": null,
+      "perception": {
+        "time": "2026-09-25T23:17:35.027243",
+        "actual": "открой яндекс музыку"
+      },
+      "verdict": "NO_ANTICIPATION"
+    },
+    {
+      "time": "2026-09-25T23:17:44.073247",
+      "context": "default",
+      "anticipation": null,
+      "perception": {
+        "time": "2026-09-25T23:17:44.073247",
+        "actual": "музыка"
+      },
+      "verdict": "NO_ANTICIPATION"
+    },
+    {
+      "time": "2026-09-25T23:17:50.579431",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:17:50.578439",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:17:50.579431",
+        "actual": "жижа"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:17:56.719622",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:17:54.095632",
+        "context": "default",
+        "based_on": "жижа",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:17:56.719622",
+        "actual": "тише"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:18:01.229617",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:18:01.229617",
+        "context": "default",
+        "based_on": "тише",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:18:01.229617",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:18:43.923748",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:18:41.582992",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:18:43.923748",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:18:50.951513",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:18:48.432771",
+        "context": "default",
+        "based_on": "лайк",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:18:50.951513",
+        "actual": "спать"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:21:19.921383",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:21:16.831455",
+        "context": "default",
+        "based_on": "спать",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:21:19.921383",
+        "actual": "следующий"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:22:28.723375",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:22:26.272124",
+        "context": "default",
+        "based_on": "следующий",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:22:28.723375",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:22:29.736547",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:22:29.736041",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:22:29.736041",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:22:34.992766",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:22:31.240290",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "лайк",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:22:34.992766",
+        "actual": "браузер"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:22:45.509545",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:22:45.509545",
+        "context": "default",
+        "based_on": "браузер",
+        "expected": "ага",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:22:45.509545",
+        "actual": "людмила"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:22:49.790871",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:22:47.002674",
+        "context": "default",
+        "based_on": "людмила",
+        "expected": "ага",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:22:49.790871",
+        "actual": "и напиши"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:22:52.304113",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:22:52.304113",
+        "context": "default",
+        "based_on": "и напиши",
+        "expected": "ага",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:22:52.304113",
+        "actual": "а людмилу"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:22:55.309200",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:22:55.308683",
+        "context": "default",
+        "based_on": "а людмилу",
+        "expected": "ага",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:22:55.309200",
+        "actual": "а гурченко"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:23:01.867850",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:22:59.305707",
+        "context": "default",
+        "based_on": "а гурченко",
+        "expected": "ага",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:23:01.867850",
+        "actual": "точка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:23:13.140478",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:23:10.376383",
+        "context": "default",
+        "based_on": "точка",
+        "expected": "ага",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:23:13.140478",
+        "actual": "тап"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:23:14.152616",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:23:14.152616",
+        "context": "default",
+        "based_on": "тап",
+        "expected": "ага",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:23:14.152616",
+        "actual": "ага"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-25T23:23:17.709573",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:23:15.154936",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "лайк",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:23:17.709573",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:25:11.552602",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:25:09.057928",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:25:11.552602",
+        "actual": "тише"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:25:18.394846",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:25:16.060926",
+        "context": "default",
+        "based_on": "тише",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:25:18.394846",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:32:11.417219",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:32:07.828330",
+        "context": "default",
+        "based_on": "лайк",
+        "expected": "спать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:32:11.417219",
+        "actual": "ев пендайс музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:32:33.074457",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:32:18.423658",
+        "context": "default",
+        "based_on": "ев пендайс музыку",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:32:33.074457",
+        "actual": "открой яндекс музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:32:39.983882",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:32:37.522836",
+        "context": "default",
+        "based_on": "открой яндекс музыку",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:32:39.983882",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:36:07.696160",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:36:05.344156",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:36:07.696160",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:36:12.721385",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:36:10.201562",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "пауза",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:36:12.721385",
+        "actual": "спать"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:41:00.218783",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:41:00.218783",
+        "context": "default",
+        "based_on": "спать",
+        "expected": "следующий",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:41:00.218783",
+        "actual": "раю все"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:41:06.330220",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:41:03.692157",
+        "context": "default",
+        "based_on": "раю все",
+        "expected": "пауза",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:41:06.330220",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:41:10.414949",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:41:10.413946",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "спать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:41:10.414949",
+        "actual": "утра"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:41:15.918783",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:41:12.838225",
+        "context": "default",
+        "based_on": "утра",
+        "expected": "пауза",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:41:15.918783",
+        "actual": "следующий"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:42:53.626127",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:42:51.272255",
+        "context": "default",
+        "based_on": "следующий",
+        "expected": "пауза",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:42:53.626127",
+        "actual": "и нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:42:58.712660",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:42:55.639165",
+        "context": "default",
+        "based_on": "и нравится",
+        "expected": "пауза",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:42:58.712660",
+        "actual": "следующий трек"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:43:00.223104",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:43:00.223104",
+        "context": "default",
+        "based_on": "следующий трек",
+        "expected": "пауза",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:43:00.223104",
+        "actual": "или"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:43:05.036492",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:43:02.715980",
+        "context": "default",
+        "based_on": "или",
+        "expected": "пауза",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-25T23:43:05.036492",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-25T23:43:15.642420",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-25T23:43:12.554234",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "спать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-25T23:43:15.642420",
+        "actual": "следующий трек"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:09:27.499989",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:09:12.793059",
+        "context": "default",
+        "based_on": "следующий трек",
+        "expected": "или",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:09:27.499989",
+        "actual": "и включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:09:33.953931",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:09:31.435367",
+        "context": "default",
+        "based_on": "и включи музыку",
+        "expected": "пауза",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-26T19:09:33.953931",
+        "actual": "пауза"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-26T19:14:29.316445",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:14:29.316445",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:14:29.316445",
+        "actual": "или"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:14:35.270222",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:14:32.813679",
+        "context": "default",
+        "based_on": "или",
+        "expected": "нравится",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:14:35.270222",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:14:40.733045",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:14:37.777184",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:14:40.733045",
+        "actual": "а для другой"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:14:41.746884",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:14:41.745878",
+        "context": "default",
+        "based_on": "а для другой",
+        "expected": "пауза",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-26T19:14:41.746884",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:14:51.765223",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:14:49.241308",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "лайк",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:14:51.765223",
+        "actual": "точка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:14:52.768176",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:14:52.768176",
+        "context": "default",
+        "based_on": "точка",
+        "expected": "тап",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:14:52.768176",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:15:02.218443",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:14:59.270051",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "лайк",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:15:02.218443",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:15:07.169311",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:15:04.724154",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:15:07.169311",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:15:12.549489",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:15:09.672087",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:15:12.549489",
+        "actual": "ага другой"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:15:13.563882",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:15:13.562876",
+        "context": "default",
+        "based_on": "ага другой",
+        "expected": "пауза",
+        "confidence": 7,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-26T19:15:13.563882",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:15:18.887076",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:15:16.555558",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "пауза",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:15:18.887076",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:47:26.329262",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:47:23.386327",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "спать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:47:26.329262",
+        "actual": "другой"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:47:30.338269",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:47:30.338269",
+        "context": "default",
+        "based_on": "другой",
+        "expected": "пауза",
+        "confidence": 7,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-26T19:47:30.338269",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:47:39.706558",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:47:36.836660",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "пауза",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:47:39.706558",
+        "actual": "другой"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:48:04.381304",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:47:49.712951",
+        "context": "default",
+        "based_on": "другой",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:48:04.381304",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:48:14.409580",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:48:11.307417",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "пауза",
+        "confidence": 7,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-26T19:48:14.409580",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:58:16.753250",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:58:14.307715",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "жижа",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:58:16.753250",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:58:22.230757",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:58:19.263434",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:58:22.230757",
+        "actual": "ага другой"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T19:58:23.238469",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:58:23.238469",
+        "context": "default",
+        "based_on": "ага другой",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:58:23.238469",
+        "actual": "ага"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-26T19:58:30.106553",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T19:58:27.737144",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "пауза",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T19:58:30.106553",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T20:08:53.991347",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T20:08:51.058524",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "спать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T20:08:53.991347",
+        "actual": "есть другой"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T20:08:54.999614",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T20:08:54.999614",
+        "context": "default",
+        "based_on": "есть другой",
+        "expected": "пауза",
+        "confidence": 8,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-26T20:08:54.999614",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T20:09:01.088741",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T20:08:57.997143",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "пауза",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T20:09:01.088741",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T20:09:08.966672",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T20:09:06.601419",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "жижа",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T20:09:08.966672",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T20:11:37.930638",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T20:11:37.930638",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "спать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T20:11:37.930638",
+        "actual": "а есть"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T20:11:42.845410",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T20:11:40.402425",
+        "context": "default",
+        "based_on": "а есть",
+        "expected": "ага",
+        "confidence": 9,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-26T20:11:42.845410",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T20:11:43.858127",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T20:11:43.858127",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага другой",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T20:11:43.858127",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T20:11:51.731499",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T20:11:48.853737",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "пауза",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T20:11:51.731499",
+        "actual": "другой"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-26T20:11:52.744034",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-26T20:11:52.744034",
+        "context": "default",
+        "based_on": "другой",
+        "expected": "ага",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-26T20:11:52.744034",
+        "actual": "ага"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-27T05:55:09.947795",
+      "context": "default",
+      "anticipation": null,
+      "perception": {
+        "time": "2026-09-27T05:55:09.947795",
+        "actual": "таба"
+      },
+      "verdict": "NO_ANTICIPATION"
+    },
+    {
+      "time": "2026-09-27T05:55:16.583460",
+      "context": "default",
+      "anticipation": null,
+      "perception": {
+        "time": "2026-09-27T05:55:16.583460",
+        "actual": "другой"
+      },
+      "verdict": "NO_ANTICIPATION"
+    },
+    {
+      "time": "2026-09-27T05:55:21.528689",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T05:55:19.091417",
+        "context": "default",
+        "based_on": "другой",
+        "expected": "другой",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T05:55:21.528689",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T05:56:31.886661",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T05:56:31.886661",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "другой",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T05:56:31.886661",
+        "actual": "если раньше"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T05:56:42.204837",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T05:56:39.880809",
+        "context": "default",
+        "based_on": "если раньше",
+        "expected": "другой",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T05:56:42.204837",
+        "actual": "нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T05:56:46.222776",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T05:56:46.222776",
+        "context": "default",
+        "based_on": "нравится",
+        "expected": "другой",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T05:56:46.222776",
+        "actual": "а жанре"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:14:30.124854",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:14:27.761166",
+        "context": "default",
+        "based_on": "а жанре",
+        "expected": "другой",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:14:30.124854",
+        "actual": "мне нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:14:36.584666",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:14:34.137413",
+        "context": "default",
+        "based_on": "мне нравится",
+        "expected": "другой",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:14:36.584666",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:14:37.618166",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:14:37.618166",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "если раньше",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T06:14:37.618166",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:14:45.481552",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:14:42.589607",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "пауза",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:14:45.481552",
+        "actual": "другой"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:14:46.487170",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:14:46.486166",
+        "context": "default",
+        "based_on": "другой",
+        "expected": "пауза",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T06:14:46.487170",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:14:55.033822",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:14:50.493326",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "другой",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T06:14:55.033822",
+        "actual": "время"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:14:56.045637",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:14:56.044542",
+        "context": "default",
+        "based_on": "время",
+        "expected": "другой",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:14:56.045637",
+        "actual": "ага"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:15:08.096319",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:14:59.044271",
+        "context": "default",
+        "based_on": "ага",
+        "expected": "другой",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T06:15:08.096319",
+        "actual": "погода"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:15:15.121087",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:15:15.119498",
+        "context": "default",
+        "based_on": "погода",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:15:15.121087",
+        "actual": "так"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:15:17.604062",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:15:17.604062",
+        "context": "default",
+        "based_on": "так",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:15:17.604062",
+        "actual": "тэк тэк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:15:21.604471",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:15:21.603470",
+        "context": "default",
+        "based_on": "тэк тэк",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:15:21.604471",
+        "actual": "тэк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:15:25.110121",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:15:25.110121",
+        "context": "default",
+        "based_on": "тэк",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:15:25.110121",
+        "actual": "оля"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:15:29.103772",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:15:29.103772",
+        "context": "default",
+        "based_on": "оля",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:15:29.103772",
+        "actual": "поля"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:38:13.805728",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:37:59.112119",
+        "context": "default",
+        "based_on": "поля",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:38:13.805728",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:38:22.403434",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:38:19.314542",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:38:22.403434",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T06:43:41.622055",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T06:43:39.259251",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T06:43:41.622055",
+        "actual": "я не нравится"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T13:13:08.830884",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T13:13:05.177571",
+        "context": "default",
+        "based_on": "я не нравится",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T13:13:08.830884",
+        "actual": "в ним музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:17:28.907336",
+      "context": "default",
+      "anticipation": null,
+      "perception": {
+        "time": "2026-09-27T15:17:28.907336",
+        "actual": "музыка"
+      },
+      "verdict": "NO_ANTICIPATION"
+    },
+    {
+      "time": "2026-09-27T15:17:52.072410",
+      "context": "default",
+      "anticipation": null,
+      "perception": {
+        "time": "2026-09-27T15:17:52.072410",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_ANTICIPATION"
+    },
+    {
+      "time": "2026-09-27T15:17:58.187234",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:17:55.084693",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T15:17:58.187234",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:18:07.664448",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:18:05.204630",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T15:18:07.664448",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:18:19.179772",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:18:19.179772",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T15:18:19.179772",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:18:51.942297",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:18:47.036698",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T15:18:51.942297",
+        "actual": "время"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:18:56.787793",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:18:53.956189",
+        "context": "default",
+        "based_on": "время",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T15:18:56.787793",
+        "actual": "громче"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:19:06.584188",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:19:01.794962",
+        "context": "default",
+        "based_on": "громче",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T15:19:06.584188",
+        "actual": "время"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:19:13.095577",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:19:10.595081",
+        "context": "default",
+        "based_on": "время",
+        "expected": "громче",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T15:19:13.095577",
+        "actual": "тише"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:19:20.105222",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:19:20.105222",
+        "context": "default",
+        "based_on": "тише",
+        "expected": "время",
+        "confidence": 2,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T15:19:20.105222",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:19:25.105930",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:19:25.104930",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "время",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T15:19:25.105930",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:19:31.604258",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:19:31.604258",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "время",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T15:19:31.604258",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:19:40.392892",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:19:35.601564",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T15:19:40.392892",
+        "actual": "время"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:19:44.924490",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:19:42.406055",
+        "context": "default",
+        "based_on": "время",
+        "expected": "громче",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T15:19:44.924490",
+        "actual": "голос спать"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:24:49.370960",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:24:45.782872",
+        "context": "default",
+        "based_on": "голос спать",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T15:24:49.370960",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:24:54.388705",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:24:54.387691",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "включи музыку",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T15:24:54.388705",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:25:15.541143",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:25:00.884093",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "время",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T15:25:15.541143",
+        "actual": "открой музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T15:25:24.667718",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T15:25:21.560213",
+        "context": "default",
+        "based_on": "открой музыку",
+        "expected": "unknown",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T15:25:24.667718",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T16:47:27.601809",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T16:47:12.944614",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "пауза",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T16:47:27.601809",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T16:47:35.057686",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T16:47:32.612771",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T16:47:35.057686",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T16:48:18.365345",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T16:48:15.935152",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "unknown",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T16:48:18.365345",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T16:48:23.201055",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T16:48:20.373029",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "unknown",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T16:48:23.201055",
+        "actual": "громче"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T16:48:30.108581",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T16:48:25.220887",
+        "context": "default",
+        "based_on": "громче",
+        "expected": "время",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T16:48:30.108581",
+        "actual": "время"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-27T16:48:45.641532",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T16:48:34.117860",
+        "context": "default",
+        "based_on": "время",
+        "expected": "громче",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T16:48:45.641532",
+        "actual": "погода"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T16:48:54.108268",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T16:48:51.157120",
+        "context": "default",
+        "based_on": "погода",
+        "expected": "unknown",
+        "confidence": 5,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T16:48:54.108268",
+        "actual": "переключить окно"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T17:12:25.937901",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T17:12:21.796482",
+        "context": "default",
+        "based_on": "переключить окно",
+        "expected": "ага",
+        "confidence": 20,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T17:12:25.937901",
+        "actual": "вкладка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T17:12:33.046554",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T17:12:30.442056",
+        "context": "default",
+        "based_on": "вкладка",
+        "expected": "ага",
+        "confidence": 20,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T17:12:33.046554",
+        "actual": "кнопка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T17:12:36.257350",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T17:12:36.256832",
+        "context": "default",
+        "based_on": "кнопка",
+        "expected": "ага",
+        "confidence": 20,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-27T17:12:36.257350",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T17:12:39.214122",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T17:12:39.214122",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "время",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T17:12:39.214122",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T17:14:40.497675",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T17:14:36.920577",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T17:14:40.497675",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T17:14:46.128714",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T17:14:46.128714",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T17:14:46.128714",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T19:20:57.566830",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:20:55.218065",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:20:57.566317",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T19:21:14.318248",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:20:59.624346",
+        "context": "default",
+        "based_on": "лайк",
+        "expected": "спать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:21:14.318248",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T19:21:19.969085",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:21:16.831433",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 6,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:21:19.969085",
+        "actual": "музыка"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-27T19:21:27.843097",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:21:25.485109",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:21:27.843097",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T19:21:32.367422",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:21:32.367422",
+        "context": "default",
+        "based_on": "лайк",
+        "expected": "спать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:21:32.367422",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T19:25:09.320975",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:25:09.319457",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:25:09.320975",
+        "actual": "unknown"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-27T19:52:38.820572",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:52:35.861032",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:52:38.820572",
+        "actual": "переключить окно"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T19:52:45.503708",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:52:41.887600",
+        "context": "default",
+        "based_on": "переключить окно",
+        "expected": "вкладка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:52:45.503708",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T19:53:09.166402",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:52:54.509779",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:53:09.166402",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T19:53:15.669648",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:53:13.188780",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 7,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:53:15.669648",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-27T19:53:25.407259",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-27T19:53:22.188904",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-27T19:53:25.407259",
+        "actual": "дальше"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T07:06:07.584814",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T07:06:03.552181",
+        "context": "default",
+        "based_on": "дальше",
+        "expected": "я поняла",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T07:06:07.584814",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T07:06:25.809467",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T07:06:11.149541",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T07:06:25.809467",
+        "actual": "яндекс музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T07:35:33.933206",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T07:35:19.283244",
+        "context": "default",
+        "based_on": "яндекс музыка",
+        "expected": "ага",
+        "confidence": 20,
+        "fallback": true
+      },
+      "perception": {
+        "time": "2026-09-28T07:35:33.933206",
+        "actual": "яндекс музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T18:50:59.283885",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T18:50:56.946317",
+        "context": "default",
+        "based_on": "яндекс музыка",
+        "expected": "яндекс музыка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T18:50:59.283885",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T19:06:15.168184",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:06:15.168184",
+        "context": "default",
+        "based_on": "лайк",
+        "expected": "спать",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:06:15.168184",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T19:06:34.798688",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:06:20.147230",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:06:34.798688",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T19:06:43.347861",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:06:40.262673",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 7,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:06:43.347861",
+        "actual": "музыка"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-28T19:06:52.428299",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:06:49.358749",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:06:52.428299",
+        "actual": "музыка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T19:06:58.829498",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:06:56.436823",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "следующий трек",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:06:58.829498",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T19:06:59.836800",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:06:59.836800",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:06:59.836800",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T19:07:06.665428",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:07:04.334496",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:07:06.665428",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T19:09:57.891987",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:09:55.499088",
+        "context": "default",
+        "based_on": "лайк",
+        "expected": "unknown",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:09:57.891987",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T19:09:58.897588",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:09:58.897588",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:09:58.897588",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-28T19:37:32.160117",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-28T19:37:29.733343",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-28T19:37:32.160117",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-29T07:49:55.649227",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-29T07:49:55.649227",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "ага",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-29T07:49:55.649227",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-29T08:07:00.639752",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-29T08:06:45.978306",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-29T08:07:00.639752",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-29T08:07:09.215927",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-29T08:07:06.108357",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 8,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-29T08:07:09.215927",
+        "actual": "музыка"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-29T23:43:58.172994",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-29T23:43:55.402033",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "пауза",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-29T23:43:58.172994",
+        "actual": "пауза"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-30T13:23:48.711880",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T13:23:46.144376",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T13:23:48.711880",
+        "actual": "кнопка"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T13:23:52.793663",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T13:23:52.789587",
+        "context": "default",
+        "based_on": "кнопка",
+        "expected": "unknown",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T13:23:52.793663",
+        "actual": "unknown"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-30T14:29:01.688791",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T14:28:46.978303",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T14:29:01.688791",
+        "actual": "включи музыку"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T14:29:08.779090",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T14:29:05.685431",
+        "context": "default",
+        "based_on": "включи музыку",
+        "expected": "музыка",
+        "confidence": 9,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T14:29:08.779090",
+        "actual": "музыка"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-30T19:30:48.236089",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:30:45.844185",
+        "context": "default",
+        "based_on": "музыка",
+        "expected": "пауза",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:30:48.236089",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T19:33:04.692155",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:33:04.692155",
+        "context": "default",
+        "based_on": "лайк",
+        "expected": "unknown",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:33:04.692155",
+        "actual": "unknown"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-30T19:33:08.975935",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:33:06.682596",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:33:08.975935",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T19:44:46.706206",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:44:44.358428",
+        "context": "default",
+        "based_on": "лайк",
+        "expected": "unknown",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:44:46.706206",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T19:47:52.500432",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:47:50.056409",
+        "context": "default",
+        "based_on": "лайк",
+        "expected": "unknown",
+        "confidence": 3,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:47:52.500432",
+        "actual": "пауза"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T19:47:53.536117",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:47:53.536117",
+        "context": "default",
+        "based_on": "пауза",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:47:53.536117",
+        "actual": "unknown"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-30T19:47:56.537652",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:47:56.537652",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 4,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:47:56.537652",
+        "actual": "unknown"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-30T19:48:05.261500",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:48:02.544088",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 5,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:48:05.261500",
+        "actual": "громче"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T19:48:06.268195",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:48:06.266617",
+        "context": "default",
+        "based_on": "громче",
+        "expected": "время",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:48:06.268195",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T19:48:12.794949",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:48:12.794949",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 5,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:48:12.794949",
+        "actual": "unknown"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-30T19:48:18.457779",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:48:15.768976",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 6,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:48:18.457779",
+        "actual": "громче"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T19:48:22.538312",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:48:22.538312",
+        "context": "default",
+        "based_on": "громче",
+        "expected": "время",
+        "confidence": 2,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:48:22.538312",
+        "actual": "unknown"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T19:48:25.975413",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:48:25.974412",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 6,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:48:25.975413",
+        "actual": "unknown"
+      },
+      "verdict": "MATCH"
+    },
+    {
+      "time": "2026-09-30T19:48:31.481308",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T19:48:28.963275",
+        "context": "default",
+        "based_on": "unknown",
+        "expected": "unknown",
+        "confidence": 7,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T19:48:31.481308",
+        "actual": "голос спать"
+      },
+      "verdict": "NO_MATCH"
+    },
+    {
+      "time": "2026-09-30T20:03:31.191594",
+      "context": "default",
+      "anticipation": {
+        "time": "2026-09-30T20:03:28.861481",
+        "context": "default",
+        "based_on": "голос спать",
+        "expected": "музыка",
+        "confidence": 1,
+        "fallback": false
+      },
+      "perception": {
+        "time": "2026-09-30T20:03:31.191594",
+        "actual": "лайк"
+      },
+      "verdict": "NO_MATCH"
+    }
+  ]
+}

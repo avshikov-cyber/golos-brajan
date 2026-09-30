@@ -1,0 +1,430 @@
+import os
+import json
+import time
+import webbrowser
+import datetime
+import pyaudio
+from vosk import Model, KaldiRecognizer
+import pyttsx3
+import pyautogui
+import pygetwindow as gw
+import subprocess
+import re
+
+# ==================== НАСТРОЙКИ ====================
+MODEL_PATH = r"C:\models\vosk-model-small-ru-0.22"
+SAMPLE_RATE = 16000
+
+WAKE_WORD = "голос"
+SLEEP_AFTER_INACTIVITY = 15
+
+PLAY_BUTTON_X = 1102
+PLAY_BUTTON_Y = 656
+LIKE_BUTTON_X = 1304
+LIKE_BUTTON_Y = 572
+POINT_BUTTON_X = 98
+POINT_BUTTON_Y = 280
+
+# ==================== СЛОВАРЬ КОМАНД ====================
+COMMANDS = {
+    "включи музыку": ["включи музыку", "включить музыку", "включи музку", "включить музку", "включи музика", "вруби музыку", "запусти музыку"],
+    "открой музыку": ["открой музыку", "открыть музыку", "открой музку", "открой музику"],
+    "яндекс музыка": ["яндекс музыка", "яндекс музка", "яндекс музика", "яндекс музык"],
+    "закрой музыку": ["закрой музыку", "закрыть музыку", "закрой музку", "закрой музику", "выключи музыку", "выключить музыку"],
+    "музыка": ["музыка", "музыку", "музка", "музика", "музык", "мужик"],
+    
+    "пауза": ["пауза", "паузу", "паза", "пауз", "ауза", "поставь на паузу", "поставить на паузу", "стоп", "останови", "приостанови"],
+    
+    "громче": ["громче", "громко", "громка", "громше", "громкой", "погромче", "сделай громче", "увеличь громкость"],
+    "тише": ["тише", "тихо", "тиха", "тихой", "потише", "сделай тише", "уменьши громкость"],
+    
+    "дальше": ["дальше", "следующий", "следующая", "следующее", "вперед", "переключи", "следующий трек"],
+    "назад": ["назад", "предыдущий", "предыдущая", "предыдущее", "верни", "назад трек"],
+    
+    "лайк": ["лайк", "нравится", "нравитца", "лайкни", "лайка", "лайкнуть", "поставь лайк", "мне нравится"],
+    
+    "точка": ["точка", "дочка", "очка", "точку", "точки", "клик", "нажми"],
+    
+    "таб": ["таб", "саб", "тап", "таб", "переключи окно", "смени окно", "переключиться"],
+    
+    "вкладка": ["вкладка", "вкладки", "вклатка", "кладка", "вкладку", "вкладке", "переключи вкладку", "смени вкладку"],
+    
+    "время": ["время", "време", "времени", "времечко", "сколько времени", "который час", "часы"],
+    
+    "браузер": ["браузер", "брауза", "браузор", "гугл", "гугле", "открой браузер", "запусти браузер", "интернет", "хром"],
+    "закрой браузер": ["закрой браузер", "закрыть браузер", "закрой гугл", "закрой хром", "закрыть хром"],
+    
+    "выключи компьютер": ["выключи компьютер", "выключить компьютер", "выключи пк", "выключить пк", "выруби компьютер", "выруби пк"],
+    
+    "голос спать": ["голос спать", "голос, спать", "голос засни", "голос усни", "голос уйди", "голос стоп"],
+    
+    "стоп": ["стоп", "хватит", "до свидания", "выключись", "замолчи", "перестань"],
+    
+    "кино": ["кино", "ино", "и но"],
+    "ссылка": ["ссылка", "ссылку", "сылка"],
+    "ютюб": ["ютюб", "ютуб", "ютьюб", "ютубе"],
+    
+    # ==================== НОВЫЕ КОМАНДЫ ====================
+    "напиши": ["напиши", "запиши", "голос напиши", "голос запиши"],
+    "enter": ["enter", "энтер", "ввод", "ввод"]
+}
+
+# ==================== ИНИЦИАЛИЗАЦИЯ ====================
+def speak(text: str):
+    print(f"🤖 {text}")
+    try:
+        engine = pyttsx3.init()
+        engine.setProperty("rate", 168)
+        engine.setProperty("volume", 0.92)
+        engine.say(text)
+        engine.runAndWait()
+        engine.stop()
+    except Exception as e:
+        print(f"TTS ошибка: {e}")
+
+def minimize_all_windows():
+    pyautogui.hotkey('win', 'd')
+    time.sleep(0.5)
+
+def click_play():
+    pyautogui.click(PLAY_BUTTON_X, PLAY_BUTTON_Y)
+    print("🎵 Клик по кнопке Play")
+
+def click_like():
+    pyautogui.click(LIKE_BUTTON_X, LIKE_BUTTON_Y)
+    print("❤️ Клик по кнопке Лайк")
+
+def click_point():
+    pyautogui.click(POINT_BUTTON_X, POINT_BUTTON_Y)
+    print("📍 Клик по Точке")
+
+def click_cinema():
+    pyautogui.click(CINEMA_BUTTON_X, CINEMA_BUTTON_Y)
+    print("🎬 Клик по кнопке Кино")
+
+def click_link():
+    pyautogui.click(LINK_BUTTON_X, LINK_BUTTON_Y)
+    print("🔗 Клик по кнопке Ссылка")
+
+def click_youtube():
+    pyautogui.click(YOUTUBE_BUTTON_X, YOUTUBE_BUTTON_Y)
+    print("▶️ Клик по кнопке Ютюб")
+
+def focus_window(title_part):
+    try:
+        windows = gw.getWindowsWithTitle(title_part)
+        if windows:
+            win = windows[0]
+            if not win.isActive:
+                win.activate()
+                time.sleep(0.5)
+                print(f"✅ Фокус на окно: {win.title}")
+                return True
+            else:
+                print(f"✅ Окно уже активно: {win.title}")
+                return True
+    except Exception as e:
+        print(f"⚠️ Ошибка фокуса: {e}")
+    return False
+
+def focus_browser():
+    try:
+        browsers = ["Google Chrome", "Mozilla Firefox", "Microsoft Edge", "Яндекс Браузер"]
+        for name in browsers:
+            windows = gw.getWindowsWithTitle(name)
+            if windows:
+                win = windows[0]
+                if not win.isActive:
+                    win.activate()
+                    time.sleep(0.3)
+                    print(f"✅ Фокус на браузер: {win.title}")
+                    return True
+                else:
+                    print(f"✅ Браузер уже активен: {win.title}")
+                    return True
+    except Exception as e:
+        print(f"⚠️ Ошибка фокуса на браузер: {e}")
+    return False
+
+def open_music_app():
+    speak("Йеп, Открываю Яндекс Музыку")
+    minimize_all_windows()
+    time.sleep(0.5)
+
+    app_path = r"C:\Users\USER\AppData\Local\Programs\YandexMusic\Яндекс Музыка.exe"
+    
+    if not os.path.exists(app_path):
+        speak("Приложение Яндекс Музыка не найдено")
+        print(f"❌ Файл не найден: {app_path}")
+        return False
+    
+    try:
+        subprocess.Popen([app_path], shell=True)
+        print("✅ Приложение запущено")
+    except Exception as e:
+        print(f"❌ Ошибка запуска: {e}")
+        speak("Не удалось запустить Яндекс Музыку")
+        return False
+
+    print("⏳ Ждём загрузки приложения (10 секунд)...")
+    time.sleep(10)
+
+    if focus_window("Яндекс Музыка"):
+        print("✅ Приложение готово")
+        return True
+    else:
+        print("⚠️ Не удалось найти окно Яндекс.Музыки")
+        return False
+
+def close_music_app():
+    speak("Йеп, Закрываю Яндекс Музыку")
+    try:
+        result = os.popen('tasklist | findstr -i "Яндекс Музыка"').read()
+        if "Яндекс Музыка" in result:
+            os.system("taskkill /f /im \"Яндекс Музыка.exe\" 2>nul")
+            print("✅ Приложение Яндекс.Музыки закрыто")
+        else:
+            windows = gw.getWindowsWithTitle("Яндекс Музыка")
+            if windows:
+                windows[0].close()
+                print("✅ Окно Яндекс.Музыки закрыто")
+            else:
+                speak("Приложение Яндекс Музыка не найдено")
+    except Exception as e:
+        print(f"⚠️ Ошибка при закрытии: {e}")
+        speak("Не удалось закрыть Яндекс Музыку")
+
+# ==================== ПРОВЕРКА КОМАНД ПО СЛОВАРЮ ====================
+def get_command(text: str):
+    text = text.lower().strip()
+    for key, variants in COMMANDS.items():
+        for variant in variants:
+            if variant in text:
+                return key
+    return None
+
+# ==================== ОБРАБОТКА КОМАНД ====================
+def process_command(text: str):
+    text = text.lower().strip()
+
+    cmd = get_command(text)
+    if not cmd:
+        return None
+
+    print(f"📌 Команда: {text}")
+
+    if cmd == "стоп" or cmd == "голос спать":
+        if "голос" in cmd:
+            speak("Ага, засыпаю")
+            return "sleep"
+        speak("До свидания")
+        return "exit"
+
+    if cmd == "таб":
+        pyautogui.hotkey('alt', 'tab')
+        speak("Ага, переключил")
+        return None
+
+    if cmd == "вкладка":
+        number_words = {
+            "один": "1", "два": "2", "три": "3", "четыре": "4",
+            "пять": "5", "шесть": "6", "семь": "7", "восемь": "8",
+            "девять": "9", "ноль": "0"
+        }
+        found = False
+        for word, digit in number_words.items():
+            if word in text:
+                num = int(digit)
+                if 1 <= num <= 9:
+                    pyautogui.hotkey('ctrl', str(num))
+                    speak(f"Ага, переключил на вкладку {num}")
+                    found = True
+                break
+        if not found:
+            pyautogui.hotkey('ctrl', 'tab')
+            speak("Йеп, следующая вкладка")
+        return None
+
+    if cmd == "точка":
+        click_point()
+        speak("Ага, точка")
+        return None
+
+    if cmd == "кино":
+        click_cinema()
+        speak("Ага, кино")
+        return None
+
+    if cmd == "ссылка":
+        click_link()
+        speak("Ага, ссылка")
+        return None
+
+    if cmd == "ютюб":
+        click_youtube()
+        speak("Ага, ютюб")
+        return None
+
+    if cmd == "громче":
+        pyautogui.press('up')
+        speak("Ага, громче")
+        return None
+    if cmd == "тише":
+        pyautogui.press('down')
+        speak("Ага, тише")
+        return None
+
+    if cmd == "браузер":
+        minimize_all_windows()
+        speak("Ага, Открываю браузер")
+        webbrowser.open("https://google.com")
+        return None
+    if cmd == "закрой браузер":
+        speak("Ага, Закрываю браузер")
+        os.system("taskkill /im chrome.exe /f")
+        return None
+
+    # --- МУЗЫКА ---
+    if cmd == "закрой музыку":
+        close_music_app()
+        return None
+
+    if cmd in ["включи музыку", "открой музыку", "яндекс музыка"]:
+        open_music_app()
+        return None
+
+    if cmd == "музыка":
+        if focus_window("Яндекс Музыка"):
+            speak("Ага, Включаю музыку")
+            click_play()
+        else:
+            speak("Йеп, сначала открой Яндекс Музыку")
+        return None
+
+    # --- ПАУЗА ---
+    if cmd == "пауза":
+        if not focus_window("Яндекс Музыка"):
+            focus_browser()
+        click_play()
+        speak("Ага, Пауза")
+        return None
+
+    # --- ДАЛЬШЕ / НАЗАД ---
+    if cmd == "дальше":
+        pyautogui.press('nexttrack')
+        speak("Йеп, Следующий трек")
+        return None
+    if cmd == "назад":
+        pyautogui.press('prevtrack')
+        speak("Ага, Предыдущий трек")
+        return None
+
+    # --- ЛАЙК ---
+    if cmd == "лайк":
+        click_like()
+        speak("Ага, лайк")
+        return None
+
+    # --- ВРЕМЯ ---
+    if cmd == "время":
+        now = datetime.datetime.now().strftime("%H:%M")
+        speak(f"Ага, Сейчас {now}")
+        return None
+
+    # --- ВЫКЛЮЧЕНИЕ ---
+    if cmd == "выключи компьютер":
+        speak("Йеп, Вы уверены? Скажите 'да', чтобы выключить компьютер.")
+        return "confirm_shutdown"
+
+    # ==================== НОВЫЕ КОМАНДЫ ====================
+    if cmd == "напиши":
+        pyautogui.hotkey('win', 'h')  # Включаем диктовку Windows
+        speak("Ага, диктую")
+        return None
+
+    if cmd == "enter":
+        pyautogui.press('enter')
+        speak("Ага, нажал")
+        return None
+
+    return None
+
+# ==================== ОСНОВНОЙ ЦИКЛ ====================
+def main():
+    print("🎤 Голосовой ассистент запущен. Скажите 'голос' для активации.")
+
+    p = pyaudio.PyAudio()
+    stream = p.open(
+        format=pyaudio.paInt16,
+        channels=1,
+        rate=SAMPLE_RATE,
+        input=True,
+        frames_per_buffer=8000
+    )
+
+    model = Model(MODEL_PATH)
+    recognizer = KaldiRecognizer(model, SAMPLE_RATE)
+    stream.start_stream()
+
+    active = False
+    last_activity = time.time()
+    shutdown_confirm = False
+
+    try:
+        while True:
+            data = stream.read(4000, exception_on_overflow=False)
+
+            if active and time.time() - last_activity > SLEEP_AFTER_INACTIVITY:
+                speak("Йеп, засыпаю")
+                active = False
+                continue
+
+            if recognizer.AcceptWaveform(data):
+                result = json.loads(recognizer.Result())
+                text = result.get("text", "").strip().lower()
+
+                if not text or len(text) < 3:
+                    continue
+
+                if not active:
+                    if WAKE_WORD in text:
+                        active = True
+                        last_activity = time.time()
+                        speak("Йеп, Слушаю, Хозяин")
+                    continue
+
+                response = process_command(text)
+
+                if response == "exit":
+                    break
+                elif response == "sleep":
+                    active = False
+                    continue
+                elif response == "confirm_shutdown":
+                    shutdown_confirm = True
+                    continue
+
+                if shutdown_confirm:
+                    if text.strip() == "да" or text.strip() == "выключай":
+                        speak("Йеп, Выключаю компьютер")
+                        os.system("shutdown /s /t 3")
+                        break
+                    else:
+                        speak("Йеп, Отмена")
+                        shutdown_confirm = False
+                        active = False
+                    continue
+
+                last_activity = time.time()
+
+    except KeyboardInterrupt:
+        speak("Йеп, Ассистент остановлен")
+    except Exception as e:
+        print(f"Ошибка: {e}")
+    finally:
+        stream.stop_stream()
+        stream.close()
+        p.terminate()
+
+if __name__ == "__main__":
+    main()
